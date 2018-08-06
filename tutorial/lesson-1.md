@@ -30,8 +30,42 @@ jx create cluster gke --skip-login
 
 This will guide you through creating a cluster on GKE.
 
+### Missing Dependencies
+
+JX will attempt to locate any required dependencies, if it discovers that some are missing
+it will prompt to install them for you in the `~/.jx/bin` folder.  It is recommended that
+you allow `jx` to install any missing dependencies.
+
+### Configure your cluster
+
+JX will then prompt you for the basic configuration options for your cluster, such as:
+
+* Google Compute Zone - select a zone that is near to you
+* Machine Type - recommended `n1-standard-2`
+* Minimum Node Count - recommended `3`
+* Maximum Node Count - recommended `5`
+* Ingress Controller - recommended `Yes`
+* Domain Configuration - recommended `Use the default`
+
+### GitHub connectivity
+
+If this is the first time you have run `jx` in this cloudshell, `jx` will prompt you for a 
+github username & api token.  If you already have one, simply enter the values when prompted. 
+If you don't have an api token, click on the link provided to generated one and enter the 
+token value into the prompt.
+
+### Jenkins connectivity
+
+Next, `jx` will attempt to configure Jenkins connectivity.  This should be done automatically, 
+but sometimes Jenkins is not able to start intime.  In this instance, you will be asked to 
+login to Jenkins using the admin user.  The password for the admin user will be displayed in the 
+console.  At this point, follow the instructions to add the Jenkins API token.
+
 ## Congratulations
 
 <walkthrough-conclusion-trophy></walkthrough-conclusion-trophy>
 
 You’re all set!
+
+You now have a fully configured Jenkins-X installation on Google Kubernetes Engine.
+
