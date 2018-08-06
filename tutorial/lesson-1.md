@@ -18,11 +18,7 @@ eval "$(./install-jx.sh)"
 
 **Tip**: Click the copy button on the side of the code box and paste the command in the Cloud Shell terminal to run it.
 
-Next, you’ll write and launch a basic tutorial.
-
-**Time to complete**: About 15 minutes
-
-Click the **Continue** button to move to the next step.
+This may take a few minutes to complete as it downloads everything it requires.
 
 ## Step 2 - Create a cluster
 
