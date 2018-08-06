@@ -1,5 +1,8 @@
-JX Tutorial on GKE with Cloudshell
-==================================
+
+
+======================================
+  JX Tutorial on GKE with Cloudshell  
+======================================
 
 To get started, you will need to install all required dependencies.  To do this
 run the script './install-jx.sh' and further instructions will be displayed.

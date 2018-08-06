@@ -5,9 +5,12 @@ GIT_USER="Jenkins-X"
 GIT_EMAIL="tutorial@jenkins-x.io"
 
 function install_dependencies() {
-	wget https://github.com/jenkins-x/jx/releases/download/v${JX_VERSION}/jx-linux-amd64.tar.gz
-	tar xvf jx-linux-amd64.tar.gz
-	rm jx-linux-amd64.tar.gz
+	echo "Installing JX..."
+	wget -q https://github.com/jenkins-x/jx/releases/download/v${JX_VERSION}/jx-linux-amd64.tar.gz
+	tar xvf jx-linux-amd64.tar.gz >/dev/null 2>&1
+	rm jx-linux-amd64.tar.gz >/dev/null 2>&1
+	./jx --version
+	echo "done"
 }
 
 function configure_environment() {
