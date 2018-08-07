@@ -5,6 +5,8 @@
 ======================================
 
 To get started, you will need to install all required dependencies.  To do this
-run the script './install-jx.sh' and further instructions will be displayed.
+run the script:
+
+eval "$(./install-jx.sh)" to install jx and add it to you path.
 
 Enjoy...
