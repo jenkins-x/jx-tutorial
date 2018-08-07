@@ -24,8 +24,16 @@ This may take a few minutes to complete as it downloads everything it requires.
 
 To create the cluster, run the following:
 
+### Service Account
+
+The first step is to create a service account to administer the cluster.
+
 ```bash
-jx create terraform --skip-login
+jx create gke-service-account --skip-login --name tutorial
+```
+
+```bash
+jx create terraform --gke-service-account ~/tutorial.key.json
 ```
 
 This will guide you through creating a cluster on GKE.
