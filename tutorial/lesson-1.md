@@ -4,7 +4,7 @@
 
 This guide will show you how to install `jx` and use it to create a cluster on Google Kubernetes Engine.
 
-**Time to complete**: About 15 minutes
+**Time to complete**: About 25 minutes
 
 Click the **Continue** button to move to the next step.
 
