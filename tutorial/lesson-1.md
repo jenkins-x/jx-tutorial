@@ -61,6 +61,62 @@ but sometimes Jenkins is not able to start intime.  In this instance, you will b
 login to Jenkins using the admin user.  The password for the admin user will be displayed in the 
 console.  At this point, follow the instructions to add the Jenkins API token.
 
+## Step 3 - Create an app
+
+Now that you have a working cluster containing a JX install, we are going to create an
+application, that can be built & deployed with Jenkins-X
+
+### Using a quickstart
+
+JX has a `create quickstart` command that will create a build from a standardised template.
+To run this command, type the following:
+
+```bash
+jx create quickstart
+```
+
+For this example, lets select `golang-http` and choose a name for the new application such
+as `cloudshell-tutorial`.
+
+JX will then guide you through setting up the git repository for the application.
+
+If this is the first application you have created, it may take a few minutes to download all
+of the required builder images in order to build/deploy the application.  To view the status 
+of the app, you can use the following:
+
+```bash
+jx get activity -f cloudshell-tutorial -w
+```
+
+To view the app in each environment along with urls
+
+```bash
+jx get apps
+```
+
+### Promote the app to production
+
+Using the `jx promote` command, you can push this version from staging to
+production.
+
+```bash
+cd cloudshell-tutorial
+```
+
+```bash
+jx promote cloudshell-tutorial --version 0.0.1 --env production
+```
+
+You can check the progress of the production deployment using:
+
+```bash
+jx get activity -f cloudshell-tutorial -w
+```
+
+```bash
+jx get apps
+```
+
 ## Congratulations
 
 <walkthrough-conclusion-trophy></walkthrough-conclusion-trophy>
