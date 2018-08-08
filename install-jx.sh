@@ -1,6 +1,6 @@
 #!/bin/bash
 
-JX_VERSION=1.3.153
+JX_VERSION=1.3.155
 GIT_USER="Jenkins-X"
 GIT_EMAIL="tutorial@jenkins-x.io"
 
@@ -18,4 +18,3 @@ function configure_environment() {
 
 install_dependencies
 configure_environment
-
