@@ -16,8 +16,8 @@ function add_path_to_bashrc() {
     if grep -q PATH ~/.bashrc; then
         echo ""
     else
-        echo "export PATH=$PATH:$HOME/bin" >> ~/.bashrc
-        echo "export PATH=$PATH:$HOME/bin"
+        echo "export PATH=$PATH:$HOME/bin:$HOME/.jx/bin" >> ~/.bashrc
+        echo "export PATH=$PATH:$HOME/bin:$HOME/.jx/bin"
     fi
 }
 
