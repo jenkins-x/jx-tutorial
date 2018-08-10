@@ -14,7 +14,7 @@ function install_dependencies() {
 
 function add_path_to_bashrc() {
     if grep -q PATH ~/.bashrc; then
-        # do nothing
+        echo ""
     else
         echo "export PATH=$PATH:$HOME/bin" >> ~/.bashrc
         echo "export PATH=$PATH:$HOME/bin"
