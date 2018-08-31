@@ -1,5 +1,9 @@
 # A collection of tutorials with JX
 
+## Prerequisites
+* Web browser
+* Google cloud account (there's a $300 credit, free tier if you don't already have one https://cloud.google.com/free/)
+
 ## Installing JX on GKE
 
 **Time to complete.** About 25 minutes
