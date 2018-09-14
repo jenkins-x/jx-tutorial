@@ -1,6 +1,6 @@
 #!/bin/bash
 
-JX_VERSION=1.3.268
+JX_VERSION=1.3.270
 GIT_USER="Jenkins-X"
 GIT_EMAIL="tutorial@jenkins-x.io"
 
