@@ -1,9 +1,7 @@
 pipeline {
+  agent any
   environment {
     GH_CREDS = credentials('jenkins-x-github')
-  }
-  agent {
-    label "jenkins-go"
   }
   stages {
     stage('CI Build') {
@@ -12,9 +10,7 @@ pipeline {
       }
       steps {
         checkout scm
-        container('go') {
-          echo "pr build"
-        }
+        echo "pr build"
       }
     }
 
@@ -23,10 +19,8 @@ pipeline {
         branch 'master'
       }
       steps {
-        checkout scm
-        container('go') {
-          echo "release build"
-        }
+        git "https://github.com/jenkins-x/jx-tutorial"
+        echo "release build"
       }
     }
   }
