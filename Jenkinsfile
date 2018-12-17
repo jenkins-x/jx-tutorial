@@ -1,7 +1,7 @@
 pipeline {
   agent any
   environment {
-    GH_CREDS = credentials('jenkins-x-github')
+    GH_CREDS = credentials('jx-pipeline-git-github-github')
   }
   stages {
     stage('CI Build') {
