@@ -1,6 +1,6 @@
 #!/bin/bash
 
-JX_VERSION=1.3.699
+JX_VERSION=1.3.702
 
 function install_dependencies() {
     wget -q https://github.com/jenkins-x/jx/releases/download/v${JX_VERSION}/jx-linux-amd64.tar.gz
