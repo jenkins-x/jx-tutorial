@@ -27,3 +27,11 @@ $HELM_HOME has been configured at /builder/home/.helm.
 Not installing Tiller due to 'client-only' flag having been set
 Happy Helming!
 helm repo add jenkins-x http://chartmuseum.jenkins-x.io 	
+"jenkins-x" has been added to your repositories
+helm dependency build
+No requirements found in ./charts.
+helm lint
+==> Linting .
+Lint OK
+
+1 chart(s) linted, no failures
