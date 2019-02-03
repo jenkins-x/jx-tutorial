@@ -3,6 +3,7 @@
 ## Prerequisites
 * Web browser
 * Google cloud account (there's a $300 credit, free tier if you don't already have one https://cloud.google.com/free/)
+* A Google cloud project (select your project with `gcloud config set project PROJECT_ID` once Cloud Shell is ready)
 
 ## Installing JX on GKE
 
