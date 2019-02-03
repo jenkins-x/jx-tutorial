@@ -3,11 +3,9 @@
 JX_VERSION=1.3.831
 
 function install_dependencies() {
-    wget -q https://github.com/jenkins-x/jx/releases/download/v${JX_VERSION}/jx-linux-amd64.tar.gz
-    tar xvf jx-linux-amd64.tar.gz >/dev/null 2>&1
-    rm jx-linux-amd64.tar.gz >/dev/null 2>&1
     mkdir -p ~/bin
-    mv jx ~/bin
+    curl -sL https://github.com/jenkins-x/jx/releases/download/v${JX_VERSION}/jx-linux-amd64.tar.gz \
+    | tar xvz -C ~/bin
 }
 
 function add_path_to_bashrc() {
