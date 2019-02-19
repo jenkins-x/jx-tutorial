@@ -52,10 +52,19 @@ JX will then prompt you for the basic configuration options for your cluster, su
 * Name of cluster 1 - recommended `dev`
 * Cluster Type - recommended `gke`
 * Google Compute Zone - select a zone that is near to you
-* Machine Type - recommended `n1-standard-2`
-* Minimum Node Count - recommended `3`
-* Maximum Node Count - recommended `5`
-* Ingress Controller - recommended `Yes`
+* Google Cloud Machine Type - recommended `n1-standard-2`
+* Minimum number of Nodes - recommended `3`
+* Maximum number of Nodes - recommended `5`
+* Would you like use preemptible VMs - recommended `Yes`
+* Would you like to access Google Cloud Storage / Google Container Registry - recommended `No`
+* Would you like to enable Kaniko for building container images - recommended `No`
+* (Optional) Would you like to enable Cloud Build, Container Registry & Container Analysis APIs - recommended `No`
+
+### Creating the cluster
+
+Once the cluster is created, you will be prompted for some configuration options:
+
+* Install Ingress Controller - recommended `Yes`
 * Domain Configuration - recommended `Use the default`
 
 ### GitHub connectivity
@@ -136,3 +145,14 @@ You’re all set!
 
 You now have a fully configured Jenkins-X installation on Google Kubernetes Engine.
 
+To avoid running up unnecessary costs, you may wish to shut down your kubernetes cluster at this point.  To view all clusters running with the current account use:
+
+```bash
+gcloud container clusters list
+```
+
+To delete the cluster run:
+
+```bash
+gcloud container clusters delete <clustername> --zone <zone>
+```
