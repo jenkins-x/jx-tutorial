@@ -13,7 +13,7 @@ Click the **Continue** button to move to the next step.
 The first thing we need to do is install the `jx` binary and add it to your PATH.
 
 ```bash
-eval "$(./install-jx.sh)"
+./install-jx.sh
 ```
 
 **Tip**: Click the copy button on the side of the code box and paste the command in the Cloud Shell terminal to run it.
