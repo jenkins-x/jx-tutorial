@@ -6,14 +6,14 @@ This guide will show you how to install `jx` and use it to create a cluster on G
 
 **Time to complete**: About 25 minutes
 
-Click the **Continue** button to move to the next step.
+Click the **Next** button to move to the next step.
 
 ## Step 1 - Installing Dependencies
 
 The first thing we need to do is install the `jx` binary and add it to your PATH.
 
 ```bash
-./install-jx.sh
+source ./install-jx.sh
 ```
 
 **Tip**: Click the copy button on the side of the code box and paste the command in the Cloud Shell terminal to run it.
