@@ -111,7 +111,7 @@ jx get activity -f cloudshell-tutorial -w
 To view the app in each environment along with urls
 
 ```bash
-jx get apps
+jx get applications
 ```
 
 ### Promote the app to production
@@ -134,7 +134,7 @@ jx get activity -f cloudshell-tutorial -w
 ```
 
 ```bash
-jx get apps
+jx get applications
 ```
 
 ## Congratulations
