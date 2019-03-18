@@ -33,7 +33,7 @@ jx create gke-service-account --skip-login --name tutorial
 ```
 
 ```bash
-jx create terraform --gke-service-account ~/tutorial.key.json
+jx create terraform --skip-login --gke-service-account ~/tutorial.key.json
 ```
 
 This will guide you through creating a cluster on GKE.
