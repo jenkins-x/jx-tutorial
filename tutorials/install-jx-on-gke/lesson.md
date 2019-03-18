@@ -114,6 +114,7 @@ production.
 ```bash
 cd cloudshell-tutorial
 ```
+_If you have 2FA enabled on your GitHub account, then you may need to use an api token as your password when prompted._
 
 ```bash
 jx promote cloudshell-tutorial --version 0.0.1 --env production
