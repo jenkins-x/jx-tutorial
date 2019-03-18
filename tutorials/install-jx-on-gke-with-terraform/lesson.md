@@ -51,11 +51,12 @@ JX will then prompt you for the basic configuration options for your cluster, su
 * Number of clusters to create - recommended `1`
 * Name of cluster 1 - recommended `dev`
 * Cluster Type - recommended `gke`
+* Install Jenkins X in cluster - recommended `Yes`
 * Google Compute Zone - select a zone that is near to you
 * Google Cloud Machine Type - recommended `n1-standard-2`
 * Minimum number of Nodes - recommended `3`
 * Maximum number of Nodes - recommended `5`
-* Would you like use preemptible VMs - recommended `Yes`
+* Would you like use preemptible VMs - recommended `No`
 * Would you like to access Google Cloud Storage / Google Container Registry - recommended `No`
 * Would you like to enable Kaniko for building container images - recommended `No`
 * (Optional) Would you like to enable Cloud Build, Container Registry & Container Analysis APIs - recommended `No`
