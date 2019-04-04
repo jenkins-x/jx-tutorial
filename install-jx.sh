@@ -1,6 +1,6 @@
 #!/bin/bash
 
-JX_VERSION=1.3.1075
+JX_VERSION=1.3.1080
 
 function install_dependencies() {
     mkdir -p ~/bin
