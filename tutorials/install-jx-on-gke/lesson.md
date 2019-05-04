@@ -65,7 +65,7 @@ token value into the prompt.
 
 ### Jenkins Installation
 
-* Select Jenkins Installation Type - recommended `Static Jenkins Master`
+* Select Jenkins Installation Type - recommended `Static Jenkins Server and Jenkinsfiles`
 * Pick workload build pack - recommend `Kubernetes Workloads: Automated CI+CD with GitOps Promotion`
 
 Next, `jx` will attempt to configure Jenkins connectivity.  This should be done automatically, 
