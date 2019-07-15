@@ -40,7 +40,8 @@ you allow `jx` to install any missing dependencies.
 
 JX will then prompt you for the basic configuration options for your cluster, such as:
 
-* Google Compute Zone - select a zone that is near to you
+* What type of cluster would you like to create - recommended `Zonal`
+* Google Cloud Zone - select a zone that is near to you
 * Google Cloud Machine Type - recommended `n1-standard-2`
 * Minimum number of Nodes - recommended `3`
 * Maximum number of Nodes - recommended `5`
