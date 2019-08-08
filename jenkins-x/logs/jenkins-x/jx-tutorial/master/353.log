@@ -1,0 +1,25 @@
+Step: build-step-credential-initializer-cwnvk:
+
+Unable to retrieve container logs for docker://385604ce4df630287cb127b9a1157922e75619bb08905f6afed4ee6e8b0b252d
+Step: build-step-working-dir-initializer-q2dq5:
+
+Unable to retrieve container logs for docker://230a292acd49e218ad633bda0cb5ff1926f0b9807d6862227b7a10ccd4229a0a
+Step: build-step-place-tools:
+
+Unable to retrieve container logs for docker://4d94c0a0e81ee41c17d00939be18d04af560f7622a727c511abb8ebe1b81e717
+Step: build-step-git-source-jenkins-x-**-tutorial-master-te-zhtpp:
+
+{"level":"warn","ts":1565276101.4911554,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1565276106.471092,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/jenkins-x/**-tutorial @ v0.0.372 in path /workspace/source"}
+Step: build-step-git-merge:
+
+Warning failed to load version: failed to parse version -dev+9e73adc0b: No Major.Minor.Patch elements found
+time="2019-08-08T14:55:06Z" level=info msg="got "
+Using SHAs from PULL_REFS=master:386d43b4797d87f8b02c4e39670243d0e095e792
+time="2019-08-08T14:55:07Z" level=warning msg="no SHAs to merge, falling back to initial cloned commit"
+Step: build-step-setup-**-git-credentials:
+
+Generated Git credentials file /builder/home/git/credentials
+Step: build-step-build-dummy-release:
+
+Release
