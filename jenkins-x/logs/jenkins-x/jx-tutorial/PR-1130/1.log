@@ -1,0 +1,26 @@
+Step: build-step-credential-initializer-xwqbx:
+
+Unable to retrieve container logs for docker://2ccded25475174623a86d7b8a7ba0a205c256d3266c23c22156ac1f876dc7458
+Step: build-step-working-dir-initializer-98pz8:
+
+Unable to retrieve container logs for docker://90eb4947b7cfef03443143abadb2983b8ac4ce5344b43c76923681fae339ff3e
+Step: build-step-place-tools:
+
+Unable to retrieve container logs for docker://e23d74b6426a7d60af06d95021cd1a487cec6aef6358c609d01b144475b2275d
+Step: build-step-git-source-jenkins-x-**-tutorial-pr-1130-t-dv7bh:
+
+{"level":"warn","ts":1565275832.5042112,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1565275835.7002676,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/jenkins-x/**-tutorial @ 6cd3a8ef21e032df73002ffc0da5253cd42b7643 in path /workspace/source"}
+Step: build-step-git-merge:
+
+Warning failed to load version: failed to parse version -dev+9e73adc0b: No Major.Minor.Patch elements found
+time="2019-08-08T14:50:41Z" level=info msg="got "
+Using SHAs from PULL_REFS=master:39d2a03bb53352cc4e0d683a27aa8f25805df0ee,1130:6cd3a8ef21e032df73002ffc0da5253cd42b7643
+ran git fetch --unshallow origin 6cd3a8ef21e032df73002ffc0da5253cd42b7643: 39d2a03bb53352cc4e0d683a27aa8f25805df0ee: in 
+ran git checkout master in 
+ran git reset --hard 39d2a03bb53352cc4e0d683a27aa8f25805df0ee in 
+ran clean --force -d . in 
+ran git merge 6cd3a8ef21e032df73002ffc0da5253cd42b7643 in 
+Step: build-step-build-dummy-build:
+
+PR
