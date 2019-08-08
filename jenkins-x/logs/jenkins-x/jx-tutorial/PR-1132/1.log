@@ -1,0 +1,27 @@
+Step: build-step-credential-initializer-lqdcs:
+
+{"level":"warn","ts":1565288815.044693,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1565288815.0498517,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Step: build-step-working-dir-initializer-jkvm8:
+
+{"level":"warn","ts":1565288818.1068182,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1565288818.1083918,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+Step: build-step-place-tools:
+
+Step: build-step-git-source-jenkins-x-**-tutorial-pr-1132-t-**7m6:
+
+{"level":"warn","ts":1565288820.4354258,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1565288822.8843591,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/jenkins-x/**-tutorial @ f472a7c247aa2facbad81da7b9a50f76326e652f in path /workspace/source"}
+Step: build-step-git-merge:
+
+Warning failed to load version: failed to parse version -dev+9e73adc0b: No Major.Minor.Patch elements found
+time="2019-08-08T18:27:03Z" level=info msg="got "
+Using SHAs from PULL_REFS=master:fe10bb9c761b20bfd0faecb531993d6ab4a7c7ec,1132:f472a7c247aa2facbad81da7b9a50f76326e652f
+ran git fetch --unshallow origin f472a7c247aa2facbad81da7b9a50f76326e652f: fe10bb9c761b20bfd0faecb531993d6ab4a7c7ec: in 
+ran git checkout master in 
+ran git reset --hard fe10bb9c761b20bfd0faecb531993d6ab4a7c7ec in 
+ran clean --force -d . in 
+ran git merge f472a7c247aa2facbad81da7b9a50f76326e652f in 
+Step: build-step-build-dummy-build:
+
+PR
