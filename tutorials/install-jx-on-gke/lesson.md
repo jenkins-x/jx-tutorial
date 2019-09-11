@@ -38,24 +38,22 @@ you allow `jx` to install any missing dependencies.
 
 ### Configure your cluster
 
-JX will then prompt you for the basic configuration options for your cluster, such as:
+JX will then provide you with defaults for the basic configuration options for your cluster. You will be prompted to make some selections, for example:
 
-* What type of cluster would you like to create - recommended `Zonal`
 * Google Cloud Zone - select a zone that is near to you
-* Google Cloud Machine Type - recommended `n1-standard-2`
-* Minimum number of Nodes - recommended `3`
-* Maximum number of Nodes - recommended `5`
-* Would you like use preemptible VMs - recommended `No`
-* Would you like to access Google Cloud Storage / Google Container Registry - recommended `No`
-* Would you like to enable Kaniko for building container images - recommended `No`
-* (Optional) Would you like to enable Cloud Build, Container Registry & Container Analysis APIs - recommended `No`
 
-### Creating the cluster
+The defaults provided include:
+* A generated name for your cluster
+* Cluster type `Zonal`
+* Machine type - `n1-standard-2`
+* Minimum number of Nodes - `3`
+* Maximum number of Nodes - `5`
+* Use of preemptible VMs - `No`
+* Access Google Cloud Storage / Google Container Registry - `Yes`
+* Enable Cloud Build, Container Registry & Container Analysis APIs - `Yes`
+* Enable Kaniko for building container images - `No`
 
-Once the cluster is created, you will be prompted for some configuration options:
-
-* Install Ingress Controller - recommended `Yes`
-* Domain Configuration - recommended `Use the default`
+Your cluster < name > in < zone > should be created for you. 🎉
 
 ### GitHub connectivity
 
@@ -64,7 +62,7 @@ github username & api token.  If you already have one, simply enter the values w
 If you don't have an api token, click on the link provided to generated one and enter the 
 token value into the prompt.
 
-### Jenkins Installation
+### Jenkins Installation  
 
 * Select Jenkins Installation Type - recommended `Static Jenkins Server and Jenkinsfiles`
 * Pick workload build pack - recommend `Kubernetes Workloads: Automated CI+CD with GitOps Promotion`
