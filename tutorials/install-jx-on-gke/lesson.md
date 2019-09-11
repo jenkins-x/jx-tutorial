@@ -8,6 +8,18 @@ This guide will show you how to install `jx` and use it to create a cluster on G
 
 Click the **Next** button to move to the next step.
 
+## Prerequisites
+
+To run this tutorial you need to:
+
+  * Create and/or select a project.
+  
+      * To create a project: `gcloud projects create <project-name>`
+      
+      * To select the project in which this tutorial will be executed: `gcloud config set project <PROJECT_ID>`
+         
+  * Billing must be enabled (note there's a $300 credit, free tier for new accounts)
+
 ## Step 1 - Installing Dependencies
 
 The first thing we need to do is install the `jx` binary and add it to your PATH.
